@@ -1,5 +1,5 @@
 %define upstream_name    Class-Discover
-%define upstream_version 1.000001
+%define upstream_version 1.000003
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
