@@ -1,15 +1,13 @@
 %define upstream_name    Class-Discover
-%define upstream_version 1.000003
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.000003
+Release:	7
 
 Summary:	Detect MooseX::Declare's 'class' keyword in files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Class-Discover
-Source0:	https://cpan.metacpan.org/authors/id/A/AS/ASH/Class-Discover-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AS/ASH/Class-Discover-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -34,7 +32,7 @@ The version parsing is basically the same as what M::I's '->version_form'
 does, so should hopefully work as well as it does.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
